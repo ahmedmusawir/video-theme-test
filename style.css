@@ -8791,9 +8791,6 @@ header {
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 /* line 41, scss/_custom.scss */
 .hero-unit header {
@@ -8801,10 +8798,6 @@ header {
   padding: 10rem;
   width: 60%;
   background-color: rgba(62, 62, 62, 0.5);
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 /* line 59, scss/_custom.scss */
 .hero-unit header h1 small {
@@ -8828,15 +8821,43 @@ section {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: black;
+  z-index: -100;
 }
 
-/* line 100, scss/_custom.scss */
+/* line 99, scss/_custom.scss */
 .second-section {
+  height: 500px;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+}
+/* line 112, scss/_custom.scss */
+.second-section .video-container {
+  height: 500px;
+  background-color: rgba(62, 62, 62, 0.8);
+}
+/* line 119, scss/_custom.scss */
+.second-section .video-container video#second-section-video {
+  position: absolute;
+  right: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -99;
+  background: url("img/second-section.jpg") no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+}
+/* line 132, scss/_custom.scss */
+.second-section .video-container .text-content {
+  position: absolute;
+  top: 6rem;
 }
 
-/* line 116, scss/_custom.scss */
+/* line 147, scss/_custom.scss */
 .fourth-section {
   background-size: cover;
   background-attachment: fixed;
