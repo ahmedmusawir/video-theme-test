@@ -6,21 +6,28 @@ jQuery(document).ready(function($) {
 	// 	wrapperZIndex: -99
 	// });
 
-	//video background
-								
-	if(typeof onetone_bigvideo !== 'undefined' && onetone_bigvideo!=null){
-	for(var i=0;i<onetone_bigvideo.length;i++){
-	jQuery(onetone_bigvideo[i].video_section_item).tubular(onetone_bigvideo[i].options);
-	   }
-	  }
-	  
-	  jQuery(".home-wrapper .section").each(function(){
-		if(jQuery(this).find("#tubular-container").length > 0){
-			
-			jQuery(this).css({"height":(jQuery(window).height()-jQuery("header").height())+"px"});
-			jQuery(this).find("#tubular-container,#tubular-player").css({"height":(jQuery(window).height()-jQuery("header").height())+"px"});
+	//Sticky navigation
 
-		}						
-	 });
+	var $targetNav = $( '.navbar-default' );
+
+	var navOffSet = $targetNav.offset().top;
+	// console.log( "Offset Top " + navOffSet ); 
+
+	
+
+	$( window ). scroll(function(){
+
+		var scrollPosition = $(window). scrollTop();
+		// console.log("Scroll Position: " + scrollPosition );
+
+		if ( scrollPosition >= navOffSet ) {
+
+			$targetNav.addClass('navbar-fixed-top').removeClass('navbar-index');
+
+		} else {
+
+			$targetNav.removeClass('navbar-fixed-top').addClass('navbar-index');
+		}
+	});
 
 });

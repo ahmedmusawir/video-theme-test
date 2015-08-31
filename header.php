@@ -20,7 +20,7 @@
 	</head>
 	<body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">  <!-- navbar-fixed-top -->
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -36,12 +36,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="vid-test-1.php"> Video Test Page 1</a></li>
-        <li><a href="vid-test-2.php"> Video Test Page 2</a></li>
-        <li><a href="vid-test-3.html"> Video Test Page 3</a></li>
-        <li><a href="vid-test-4.php"> Video Test Page 4</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="vid-test-1.php"> Video Page 1</a></li>
+        <li><a href="vid-test-2.php"> Video Page 2</a></li>
+        <li><a href="vid-test-3.html"> Video Page 3</a></li>
+        <li><a href="vid-test-4.php"> Video Page 4</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">

@@ -8,18 +8,41 @@ body {
 header {
 	margin-top: 50px;
 }
+.footer-content {
+	position: fixed;
+	height: 300px;
+	z-index: -99;
+	bottom: 0;
+}
+
+.navbar {
+	// @include transition(all .2s ease-in-out);
+}
+.navbar-index {
+	margin-top: 600px;
+	position: absolute;
+	width: 100%;
+	padding: 3rem;
+	font-size: 2rem;
+
+}
+.active {
+	// height: 10rem;
+	// border: 1px solid red;
+}
 
 #wrapper {
 	// z-index: -999;
 	// border: 4px solid yellow;
-	overflow: hidden;
+	// overflow: hidden;
+	margin-bottom: 400px;
 	
 }
 	
 
 .hero-unit {
 		// border: 4px solid red;
-		height: 600px;
+		height: 700px;
 		// background: url("img/hero-bg.jpg");
 		background-size: cover;
 		background-attachment: fixed;
@@ -85,7 +108,7 @@ header {
 
 section {
 	// margin-top: 3rem;
-	margin-bottom: 3rem;
+	// margin-bottom: 3rem;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	background-color: black;
@@ -108,6 +131,7 @@ section {
 		position: relative;
 		overflow: hidden;
 		position: relative;
+		z-index: -9;
 
 	.video-container {
 		height: 500px;
@@ -124,7 +148,7 @@ section {
 			min-height: 100%;
 			width: auto;
 			height: auto;
-			z-index: -99;
+			z-index: -8;
 			background: url("img/second-section.jpg") no-repeat;
 			background-size: cover;
 		}
